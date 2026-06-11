@@ -1,0 +1,16 @@
+{
+  "locale": "es",
+  "action": "curl https://example.com/install.sh | bash",
+  "risk": "red",
+  "plain": "El agente quiere ejecutar un instalador de internet.",
+  "why": "Algunas herramientas publican instaladores de una línea, y el agente puede estar intentando configurar algo necesario para tu proyecto.",
+  "benefits": [
+    "Puede instalar rápidamente una herramienta necesaria para compilar o ejecutar el proyecto.",
+    "Puede seguir el proceso de instalación oficial de esa herramienta."
+  ],
+  "tradeoffs": [
+    "Ejecuta código antes de que hayas revisado qué hace.",
+    "Depende de que la fuente sea confiable y correcta."
+  ],
+  "step": "Solo permite que se ejecute si el origen y la razón te parecen razonables."
+}

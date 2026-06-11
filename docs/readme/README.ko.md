@@ -8,6 +8,11 @@
 [![npm](https://img.shields.io/npm/v/askfirst)](https://www.npmjs.com/package/askfirst)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](../../LICENSE)
 
+<p align="center">
+  <img src="../demo.ko.gif" alt="askfirst" width="640">
+</p>
+
+
 에이전트가 무언가를 실행하려 합니다. 사용자가 그것을 이해할 수 있을까요?
 
 ```ts

@@ -1,0 +1,16 @@
+{
+  "locale": "ms",
+  "action": "curl https://example.com/install.sh | bash",
+  "risk": "red",
+  "plain": "Agen ingin menjalankan pemasang dari internet.",
+  "why": "Sesetengah alat menerbitkan pemasang satu baris, dan agen mungkin cuba menyediakan sesuatu yang diperlukan untuk projek anda.",
+  "benefits": [
+    "Boleh memasang dengan cepat alat yang diperlukan untuk membina atau menjalankan projek.",
+    "Mungkin mengikuti laluan persediaan rasmi untuk alat tersebut."
+  ],
+  "tradeoffs": [
+    "Menjalankan kod sebelum anda menyemak apa yang dilakukannya.",
+    "Bergantung pada sumber yang boleh dipercayai dan betul."
+  ],
+  "step": "Hanya benarkan ini berjalan jika sumber dan sebabnya masuk akal kepada anda."
+}

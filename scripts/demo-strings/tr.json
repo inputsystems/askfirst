@@ -1,0 +1,16 @@
+{
+  "locale": "tr",
+  "action": "curl https://example.com/install.sh | bash",
+  "risk": "red",
+  "plain": "Ajan, internetten bir yükleyici çalıştırmak istiyor.",
+  "why": "Bazı araçlar tek satırlık yükleyiciler yayımlar ve ajan projeniz için gereken bir şeyi kurmaya çalışıyor olabilir.",
+  "benefits": [
+    "Projeyi derlemek veya çalıştırmak için gereken bir aracı hızla kurabilir.",
+    "Bu araç için resmi kurulum yolunu izleyebilir."
+  ],
+  "tradeoffs": [
+    "Ne yaptığını incelemeden önce kod çalıştırır.",
+    "Kaynağın güvenilir ve doğru olmasına bağlıdır."
+  ],
+  "step": "Bunu yalnızca kaynak ve gerekçe size anlamlı geliyorsa çalıştırın."
+}

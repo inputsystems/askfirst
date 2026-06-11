@@ -8,6 +8,11 @@
 [![npm](https://img.shields.io/npm/v/askfirst)](https://www.npmjs.com/package/askfirst)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](../../LICENSE)
 
+<p align="center">
+  <img src="../demo.tr.gif" alt="askfirst" width="640">
+</p>
+
+
 Ajanınız bir şey çalıştırmak istiyor. Kullanıcınız bunu anlayabilir mi?
 
 ```ts

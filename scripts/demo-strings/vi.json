@@ -1,0 +1,16 @@
+{
+  "locale": "vi",
+  "action": "curl https://example.com/install.sh | bash",
+  "risk": "red",
+  "plain": "Tác nhân muốn chạy trình cài đặt từ internet.",
+  "why": "Một số công cụ xuất bản trình cài đặt một dòng, và tác nhân có thể đang cố gắng thiết lập thứ gì đó cần thiết cho dự án của bạn.",
+  "benefits": [
+    "Có thể nhanh chóng cài đặt công cụ cần thiết để xây dựng hoặc chạy dự án.",
+    "Có thể theo con đường cài đặt chính thức cho công cụ đó."
+  ],
+  "tradeoffs": [
+    "Chạy mã trước khi bạn đã xem xét những gì nó làm.",
+    "Phụ thuộc vào việc nguồn đáng tin cậy và chính xác."
+  ],
+  "step": "Chỉ cho phép chạy nếu nguồn gốc và lý do có vẻ hợp lý với bạn."
+}

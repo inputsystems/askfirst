@@ -16,7 +16,7 @@
 </div>
 
 <p align="center">
-  <img src="docs/demo.gif" alt="askfirst explaining curl | bash in plain language with a red STOP AND REVIEW badge" width="720">
+  <img src="docs/demo.gif" alt="askfirst explaining curl | bash in plain language with a red STOP AND REVIEW badge" width="640">
 </p>
 
 Most agent products ask for approval by showing the raw shell command. Non-experts can't evaluate `curl … | bash`, so they rubber-stamp it — and the approval step protects no one. `askfirst` turns that moment into a calm, plain-language decision the user can actually make.

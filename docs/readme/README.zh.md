@@ -8,6 +8,11 @@
 [![npm](https://img.shields.io/npm/v/askfirst)](https://www.npmjs.com/package/askfirst)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](../../LICENSE)
 
+<p align="center">
+  <img src="../demo.zh.gif" alt="askfirst" width="640">
+</p>
+
+
 您的代理想要运行某个命令。您的用户能理解它吗？
 
 ```ts

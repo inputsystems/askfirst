@@ -1,0 +1,16 @@
+{
+  "locale": "tl",
+  "action": "curl https://example.com/install.sh | bash",
+  "risk": "red",
+  "plain": "Nais ng agent na magpatakbo ng installer mula sa internet.",
+  "why": "Ang ilang tool ay naglalathala ng one-line installer, at maaaring sinisikap ng agent na i-set up ang isang bagay na kailangan ng iyong proyekto.",
+  "benefits": [
+    "Mabilis na makakapag-install ng tool na kailangan para i-build o patakbuhin ang proyekto.",
+    "Maaaring sundin ang opisyal na landas ng pag-setup para sa tool na iyon."
+  ],
+  "tradeoffs": [
+    "Nagpapatakbo ng code bago mo masuri kung ano ang ginagawa nito.",
+    "Nakasalalay sa pagiging mapagkakatiwalaan at tama ng pinagmulan."
+  ],
+  "step": "Pahintulutan lamang itong tumakbo kung malinaw sa iyo ang pinagmulan at dahilan."
+}

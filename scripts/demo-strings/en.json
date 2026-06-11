@@ -1,0 +1,16 @@
+{
+  "locale": "en",
+  "action": "curl https://example.com/install.sh | bash",
+  "risk": "red",
+  "plain": "The agent wants to run an installer from the internet.",
+  "why": "Some tools publish one-line installers, and the agent may be trying to set up something needed for your project.",
+  "benefits": [
+    "Can quickly install a tool needed to build or run the project.",
+    "May follow the official setup path for that tool."
+  ],
+  "tradeoffs": [
+    "Runs code before you have reviewed what it does.",
+    "Depends on the source being trustworthy and correct."
+  ],
+  "step": "Only let this run if the source and reason make sense to you."
+}
