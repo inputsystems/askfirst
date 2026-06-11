@@ -5,4 +5,3 @@ dist/
 *.tgz
 .DS_Store
 ._*
-package-lock.json
