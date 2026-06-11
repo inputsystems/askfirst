@@ -1,14 +1,30 @@
+<div align="center">
+
 # askfirst
 
-🌐 **English** · [العربية](docs/readme/README.ar.md) · [Deutsch](docs/readme/README.de.md) · [Español](docs/readme/README.es.md) · [Français](docs/readme/README.fr.md) · [עברית](docs/readme/README.he.md) · [हिन्दी](docs/readme/README.hi.md) · [Bahasa Indonesia](docs/readme/README.id.md) · [日本語](docs/readme/README.ja.md) · [한국어](docs/readme/README.ko.md) · [Bahasa Melayu](docs/readme/README.ms.md) · [Português (Brasil)](docs/readme/README.pt-BR.md) · [Tagalog](docs/readme/README.tl.md) · [Türkçe](docs/readme/README.tr.md) · [Tiếng Việt](docs/readme/README.vi.md) · [中文（简体）](docs/readme/README.zh.md) · [中文（繁體）](docs/readme/README.zh-Hant.md)
-
-**Human-approval UX for AI agents and CLIs.** Explain risky actions in plain language — what, why, benefits, tradeoffs, and how to judge them — *before* a human approves them.
+**Your AI agent wants to run `curl … | bash`. Your user clicks _Approve_ without understanding it.**
+### askfirst turns risky agent actions into a plain-language decision a human can actually make.
 
 [![CI](https://github.com/inputsystems/askfirst/actions/workflows/ci.yml/badge.svg)](https://github.com/inputsystems/askfirst/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/askfirst)](https://www.npmjs.com/package/askfirst)
+[![downloads](https://img.shields.io/npm/dm/askfirst)](https://www.npmjs.com/package/askfirst)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](./package.json)
 
-Your agent wants to run something. Can your user understand it?
+🌐 **English** · [العربية](docs/readme/README.ar.md) · [Deutsch](docs/readme/README.de.md) · [Español](docs/readme/README.es.md) · [Français](docs/readme/README.fr.md) · [עברית](docs/readme/README.he.md) · [हिन्दी](docs/readme/README.hi.md) · [Bahasa Indonesia](docs/readme/README.id.md) · [日本語](docs/readme/README.ja.md) · [한국어](docs/readme/README.ko.md) · [Bahasa Melayu](docs/readme/README.ms.md) · [Português (Brasil)](docs/readme/README.pt-BR.md) · [Tagalog](docs/readme/README.tl.md) · [Türkçe](docs/readme/README.tr.md) · [Tiếng Việt](docs/readme/README.vi.md) · [中文（简体）](docs/readme/README.zh.md) · [中文（繁體）](docs/readme/README.zh-Hant.md)
+
+</div>
+
+<!--
+  ▲ DEMO GIF GOES HERE ▲
+  Record examples/explain-cli.ts with vhs (https://github.com/charmbracelet/vhs)
+  or asciinema, then drop it in as:
+  <p align="center"><img src="docs/demo.gif" alt="askfirst explaining a risky command" width="720"></p>
+  A 5-second clip of curl|bash getting a red badge + plain-language "why" is the
+  single highest-converting thing you can add to this README.
+-->
+
+Most agent products ask for approval by showing the raw shell command. Non-experts can't evaluate `curl … | bash`, so they rubber-stamp it — and the approval step protects no one. `askfirst` turns that moment into a calm, plain-language decision the user can actually make.
 
 ```ts
 import { explainAction } from "askfirst";
@@ -21,8 +37,6 @@ explanation.why;    // "Some tools publish one-line installers, and the agent ma
                     //  trying to set up something needed for your project."
 explanation.tradeoffs[0]; // "Runs code before you have reviewed what it does."
 ```
-
-Most agent products ask for approval by showing the raw shell command. Non-experts can't evaluate `curl … | bash`, so they rubber-stamp it — and the approval step protects no one. `askfirst` turns that moment into a calm, plain-language decision the user can actually make.
 
 ## Install
 
