@@ -15,14 +15,9 @@
 
 </div>
 
-<!--
-  ▲ DEMO GIF GOES HERE ▲
-  Record examples/explain-cli.ts with vhs (https://github.com/charmbracelet/vhs)
-  or asciinema, then drop it in as:
-  <p align="center"><img src="docs/demo.gif" alt="askfirst explaining a risky command" width="720"></p>
-  A 5-second clip of curl|bash getting a red badge + plain-language "why" is the
-  single highest-converting thing you can add to this README.
--->
+<p align="center">
+  <img src="docs/demo.gif" alt="askfirst explaining curl | bash in plain language with a red STOP AND REVIEW badge" width="720">
+</p>
 
 Most agent products ask for approval by showing the raw shell command. Non-experts can't evaluate `curl … | bash`, so they rubber-stamp it — and the approval step protects no one. `askfirst` turns that moment into a calm, plain-language decision the user can actually make.
 
