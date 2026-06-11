@@ -1,0 +1,62 @@
+{
+  "name": "askfirst",
+  "version": "0.1.0",
+  "description": "Human-approval UX for AI agents and CLIs: explain risky actions in plain language before a human approves them.",
+  "keywords": [
+    "ai-agents",
+    "human-in-the-loop",
+    "approval",
+    "safety",
+    "guardrails",
+    "risk",
+    "ux",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "iomoth",
+  "homepage": "https://github.com/inputsystems/askfirst#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inputsystems/askfirst.git"
+  },
+  "bugs": "https://github.com/inputsystems/askfirst/issues",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./locales": {
+      "types": "./dist/locales/index.d.ts",
+      "default": "./dist/locales/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "tsx --test tests/*.test.ts",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
