@@ -23,6 +23,7 @@ jobs:
       - name: Check tag matches package version
         run: node -e "if (process.env.GITHUB_REF_NAME !== 'v' + require('./package.json').version) { console.error('Tag does not match package.json version'); process.exit(1); }"
       # npm publish runs prepublishOnly (typecheck + test) and prepack (build).
-      - run: npm publish
+      # --provenance attaches a signed SLSA attestation (requires id-token: write above).
+      - run: npm publish --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
