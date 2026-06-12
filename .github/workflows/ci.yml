@@ -34,6 +34,7 @@ jobs:
           npx tsx examples/explain-cli.ts "curl https://example.com/install.sh | bash"
           npx tsx examples/packet-to-markdown.ts "npm install left-pad"
           echo "a" | npx tsx examples/agent-gate.ts
+          printf '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"classify_action","arguments":{"action":"rm -rf /"}}}\n' | node examples/integrations/mcp-server.mjs
 
   package:
     runs-on: ubuntu-latest

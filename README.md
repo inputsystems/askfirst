@@ -160,6 +160,14 @@ npx tsx examples/agent-gate.ts          # mock agent loop with approve/deny gate
 npx tsx examples/packet-to-markdown.ts  # render a packet as a PR-ready comment
 ```
 
+## Integrations
+
+Put askfirst in front of an agent's tool calls — copy-paste adapters in [examples/integrations](examples/integrations):
+
+- **[MCP server](examples/integrations/mcp-server.mjs)** — "approve tool calls with askfirst". A zero-dependency [Model Context Protocol](https://modelcontextprotocol.io) server (stdio) exposing `explain_action` and `classify_action` to any MCP client, including Claude Desktop.
+- **[LangChain](examples/integrations/langchain.ts)** — wrap a tool so routine commands run and risky ones return a plain-language approval request.
+- **[OpenAI Agents SDK](examples/integrations/openai-agents.ts)** — drive a tool's `needsApproval` with the risk level; render the explanation at the approval point.
+
 ## Scope, honestly
 
 `askfirst` is a **UX layer, not a security boundary**. The classifications are pattern-based heuristics: they make approval prompts understandable, they do not sandbox anything, and a crafted command can evade them. Publishing the patterns is a deliberate choice — they explain decisions to humans; they are not the enforcement mechanism. Pair this library with real isolation (containers, permission systems, model-side refusals) for actual containment. See [SECURITY.md](./SECURITY.md).

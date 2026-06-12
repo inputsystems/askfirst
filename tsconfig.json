@@ -10,5 +10,6 @@
     "verbatimModuleSyntax": true,
     "types": ["node"]
   },
-  "include": ["src/**/*.ts", "tests/**/*.ts", "examples/**/*.ts"]
+  "include": ["src/**/*.ts", "tests/**/*.ts", "examples/**/*.ts"],
+  "exclude": ["examples/integrations/**"]
 }
